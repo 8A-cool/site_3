@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static '../static/CSS/main.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+        
+        <title>Кибер лига петляковские стрелки</title>
+    </head>
+
+    <body>
+        <header>
+            <div id="divSetting">  
+                <div id="menuIcon"></div>
+            </div>
+
+            <div class="headerButtons">
+                <a href="#" class="headerButton">Петляковские стрелки</a>
+                <a href="#" class="headerButton">Домой</a>
+                <a href="#" class="headerButton">Команды</a>
+                <a href="#" class="headerButton">Результаты</a>
+            </div>
+
+            <div id="divider"></div>
+            
+            <a href="#" id="registerAndLogin">
+                <img src="user-icon.png" alt="Вход/Регистрация" id="userIcon">
+            </a>
+        </header>
+
+        <main>
+            <p>Основное содержимое сайта</p>
+        </main>
+
+        <footer>
+            <p>Подвал сайта</p>
+        </footer>
+
+        <!-- Модальное окно для регистрации и авторизации -->
+        <div id="authModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Регистрация / Авторизация</h2>
+                <form id="registrationForm">
+                    <label for="regUsername">Имя пользователя:</label>
+                    <input type="text" id="regUsername" name="regUsername" required>
+
+                    <label for="regEmail">Email:</label>
+                    <input type="email" id="regEmail" name="regEmail" required>
+
+                    <label for="regPassword">Пароль:</label>
+                    <input type="password" id="regPassword" name="regPassword" required>
+
+                    <button type="submit">Зарегистрироваться</button>
+                </form>
+
+                <form id="loginForm">
+                    <label for="loginUsername">Имя пользователя:</label>
+                    <input type="text" id="loginUsername" name="loginUsername" required>
+
+                    <label for="loginPassword">Пароль:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+
+                    <button type="submit">Войти</button>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- Модальное окно для меню -->
+        <div id="menuModal" class="modal">
+            <div class="modal-content" id="menuModalContent">
+                <span class="close">&times;</span>
+                <h2>Меню</h2>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="scripts">
+            <script src="{% static '../static/scripts/reg-auth.js' %}"></script>
+            <script src="{% static '../static/scripts/menu-settings.js' %}"></script>
+    </body>
+</html>

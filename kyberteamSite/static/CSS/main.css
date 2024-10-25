@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Шапка */
+header {
+    background-color: #2d48b6;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Кнопки на шапке */
+.headerButtons {
+    display: flex;
+    align-items: center;
+}
+
+.headerButton {
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.headerButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Линия рядом с кнопкой для рег. или входа в профиль */
+#divider {
+    width: 2px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 20px;
+    align-self: center;
+}
+
+/* Кнопка для регистрации или входа в профиль */
+#registerAndLogin {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#registerAndLogin:hover {
+    background-color: #f0f0f0;
+}
+
+#userIcon {
+    width: 24px;
+    height: 24px;
+    color: #2d48b6;
+}
+
+/* Иконка меню */
+#divSetting {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#menuIcon {
+    width: 24px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#menuIcon::before,
+#menuIcon::after,
+#menuIcon div {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+#divSetting:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Основное содержимое и подвал */
+main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f0f0f0;
+    margin-top: 20px;
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2d48b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1e3a8a;
+}
+
+/* Стили для модального окна меню */
+#menuModalContent {
+    position: absolute;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: left 0.3s ease;
+}
+
+#menuModalContent ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menuModalContent ul li {
+    margin-bottom: 10px;
+}
+
+#menuModalContent ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#menuModalContent ul li a:hover {
+    color: #2d48b6;
+}
+
+/* Анимация для модального окна меню */
+#menuModal.show {
+    display: block;
+}
+
+#menuModal.show #menuModalContent {
+    left: 0;
+}
