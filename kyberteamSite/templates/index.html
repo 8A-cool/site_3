@@ -5,10 +5,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../static/images/site_3-design/logo.png" />
         <link rel="stylesheet" href="{% static '../static/CSS/main.css' %}">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
         
-        <title>Кибер лига петляковские стрелки</title>
+        <title>Кибер лига</title>
     </head>
 
     <body>
@@ -18,28 +19,99 @@
             </div>
 
             <div class="headerButtons">
-                <a href="#" class="headerButton">Петляковские стрелки</a>
-                <a href="#" class="headerButton">Домой</a>
-                <a href="#" class="headerButton">Команды</a>
-                <a href="#" class="headerButton">Результаты</a>
+                <a href="#" class="headerButton">НОВОСТИ</a>
+                <a href="#" class="headerButton">МАТЧ-ЦЕНТР</a>
+                <a href="#" class="headerButton">РЕЗУЛЬТАТЫ</a>
             </div>
 
-            <div id="divider"></div>
             
-            <a href="#" id="registerAndLogin">
-                <img src="{%static 'C:\Users\Admin\Desktop\SiteProj\kyberteamSite\static\images\user-icon.jpg'}" alt="Вход/Регистрация" id="userIcon">
+            <a  id="registerAndLogin">
+                <img src="{% static '../static/images/user-icon.jpg' %}" alt="Вход/Регистрация" id="userIcon">
             </a>
         </header>
 
         <main>
             <div class="InnerContainer">
-                
+                <div id="newsNadpis">
+                    <span><i>НОВОСТИ</i></span>
+                </div>
+                <div class="newsApplications">  
+                    <div class="NewApplicCard" id="new1">
+                        <div class="newheader">
+                            <div class="newHeaderText">
+                                <i>НОВОСТЬ</i>
+                            </div>
+                        </div>
+                        <div class="newFooter">
+                            <div class="newFooterText">
+                                Подготовка к турниру
+                            </div>
+                            <div class="CardGameName">
+                                DOTA 2
+                            </div>
+                            <div class="GameDateContainer">
+                                <span>22.11.2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="NewApplicCard" id="new2">
+                        <div class="newheader">
+                            <div class="newHeaderText">
+                                <i>НОВОСТЬ</i>
+                            </div>
+                        </div>
+                        <div class="newFooter">
+                            <div class="newFooterText">
+                                Подготовка к турниру
+                            </div>
+                            <div class="CardGameName">
+                                DOTA 2
+                            </div>
+                            <div class="GameDateContainer">
+                                <span>22.11.2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="NewApplicCard" id="new3">
+                        <div class="newheader">
+                            <div class="newHeaderText">
+                                <i>НОВОСТЬ</i>
+                            </div>
+                        </div>
+                        <div class="newFooter">
+                            <div class="newFooterText">
+                                Подготовка к турниру
+                            </div>
+                            <div class="CardGameName">
+                                DOTA 2
+                            </div>
+                            <div class="GameDateContainer">
+                                <span>22.11.2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="NewApplicCard" id="new4">
+                        <div class="newheader">
+                            <div class="newHeaderText">
+                                <i>НОВОСТЬ</i>
+                            </div>
+                        </div>
+                        <div class="newFooter">
+                            <div class="newFooterText">
+                                Подготовка к турниру
+                            </div>
+                            <div class="CardGameName">
+                                DOTA 2
+                            </div>
+                            <div class="GameDateContainer">
+                                <span>22.11.2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 
-        <footer>
-            <p>Подвал сайта</p>
-        </footer>
 
         <!-- Модальное окно для регистрации и авторизации -->
         <div id="authModal" class="modal">
@@ -76,11 +148,13 @@
         <div id="menuModal" class="modal">
             <div class="modal-content" id="menuModalContent">
                 <span class="close">&times;</span>
-                <h2>Меню</h2>
+                <h2 id = "menuFirstText">Меню</h2>
                 <ul>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <div id="menuText">
+                        <li><a href="#" >О нас</a></li>
+                        <li><a href="#" >Контакты</a></li>
+                        <li><a href="#" >FAQ</a></li>
+                    </div>
                 </ul>
             </div>
         </div>
