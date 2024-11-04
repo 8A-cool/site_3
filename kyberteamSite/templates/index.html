@@ -32,9 +32,12 @@
 
         <main>
             <div class="InnerContainer">
+                {% block page_name %}
                 <div id="newsNadpis">
                     <span><i>НОВОСТИ</i></span>
                 </div>
+                {% endblock page_name %}
+            {% block page_content %}
                 <div class="newsApplications">  
                     <div class="NewApplicCard" id="new1">
                         <div class="newheader">
@@ -108,7 +111,44 @@
                             </div>
                         </div>
                     </div>
+                    <div class="NewApplicCard" id="new5">
+                        <div class="newheader">
+                            <div class="newHeaderText">
+                                <i>НОВОСТЬ</i>
+                            </div>
+                        </div>
+                        <div class="newFooter">
+                            <div class="newFooterText">
+                                Подготовка к турниру
+                            </div>
+                            <div class="CardGameName">
+                                DOTA 2
+                            </div>
+                            <div class="GameDateContainer">
+                                <span>22.11.2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="NewApplicCard" id="new6">
+                        <div class="newheader">
+                            <div class="newHeaderText">
+                                <i>НОВОСТЬ</i>
+                            </div>
+                        </div>
+                        <div class="newFooter">
+                            <div class="newFooterText">
+                                Подготовка к турниру
+                            </div>
+                            <div class="CardGameName">
+                                DOTA 2
+                            </div>
+                            <div class="GameDateContainer">
+                                <span>22.11.2024</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            {% endblock page_content %}
             </div>
         </main>
 
