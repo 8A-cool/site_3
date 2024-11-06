@@ -4,13 +4,23 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 main{
     padding:  0;
-
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/site_3-design/fone.png');
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    user-select: none;
 }
 
 /* Шапка */
@@ -48,16 +58,6 @@ header {
 .headerButton:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
-
-.InnerContainer {
-    height: 100vh;
-    width: 100vw;
-    background-image: url('../images/site_3-design/fone.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat:repeat-y;
-}
-
 
 /* Кнопка для регистрации или входа в профиль */
 #registerAndLogin {
@@ -129,8 +129,7 @@ header {
 }
 
 .newsApplications{
-    width: 85vw;
-    display:block;
+    display: block;
     margin-left: 13.5vw;
     margin-right: 10vw;
     margin-top: -110px;
@@ -140,6 +139,11 @@ header {
 .NewApplicCard{
     display: inline-block;
     margin-left: 2vw;
+
+}
+
+.NewApplicCard :hover{
+    
 }
 
 .newheader{
@@ -198,6 +202,39 @@ header {
     clip-path: polygon(0% 0%, 0 62%, 18% 100%, 100% 100%, 100% 33%, 78% 0);
 }
 
+#new1Head{
+    background-image: url("https://rg.ru/uploads/images/2023/02/15/18p_new_verh_kibersport_563_ca3.jpg");
+    background-size: cover;
+    height: 45vh;
+    width: 65vw;
+}
+
+#new1Head .newHeaderText{
+    display: inline-block;
+    margin-left: 35px;
+    margin-top: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: radial-gradient(circle, rgba(91,3,187,1) 0%, rgba(130,53,206,1) 31%, rgba(172,108,227,0) 65%, rgba(168,18,231,0) 100%);
+    font-size: 80px;
+}
+
+#new1footer{
+    padding-left: 50px;
+    margin-left: 25px;
+    height: 22vh;
+    width: 65vw;
+}
+
+#new1footer .newFooterText{
+    padding-top: 20px;
+}
+
+#new1footer .GameDateContainer{
+
+    margin-left: 570px;
+}
+
 /* Модальное окно */
 .modal {
     display: none;
@@ -231,7 +268,6 @@ header {
     transform: translateY(-50px);
     transition: opacity 0.3s ease, transform 0.3s ease;
     justify-self: center;
-    margin-top: 20vh;
     z-index: 100;
 }
 
@@ -289,10 +325,7 @@ form button:hover {
 
 /* Стили для модального окна меню */
 #menuModalContent {
-    position: absolute;
-    top: 0;
-    left: -300px;
-    width: 300px;
+    position: fixed;
     height: 100vh;
     background-color: #fff;
     border-radius: 0;
@@ -332,4 +365,5 @@ form button:hover {
 #menuModal.show #menuModalContent {
     left: 0;
     z-index: 100;
+
 }
