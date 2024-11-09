@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a{
+    color: black;
+    text-decoration: none ;
+}
+
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -119,7 +124,7 @@ header {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-#newsNadpis{
+.newsNadpis{
     padding-top: 130px;
     color:  white;
     font-weight: 600;
@@ -144,12 +149,12 @@ header {
 
 }
 
-.NewApplicCard :hover{
-    color: #ffffff;
-}
 
 .newheader{
     background-color: rgb(47, 255, 106);
+    backdrop-filter: blur(50px);
+    color: black;
+    transition: color 1ms ease-in-out;
     padding-top: 75px;
     padding-left: 20px;
     height: 200px;
@@ -160,6 +165,10 @@ header {
     z-index: 10;
     position: relative;
     margin-top: 200px;
+}
+
+.newheader :hover{
+    color: #f0f0f0;
 }
 
 .newFooter{
@@ -179,6 +188,11 @@ header {
 .newFooterText{
     font-weight: bold;
     font-size: 135%;
+    color: black;
+}
+
+.newFooterText:hover{
+    color: gray;
 }
 
 .GameDateContainer{
@@ -187,8 +201,6 @@ header {
     margin-top: 85px;
     margin-left: 170px;
     color: #211f1f;
-
-
 }
 
 .CardGameName{
@@ -207,26 +219,28 @@ header {
 #new1Head{
     background-image: url("https://rg.ru/uploads/images/2023/02/15/18p_new_verh_kibersport_563_ca3.jpg");
     background-size: cover;
+    backdrop-filter: blur(15px);
     height: 45vh;
     width: 65vw;
 }
 
 #new1Head .newHeaderText{
-    color: #fff;
     display: inline-block;
     margin-left: 35px;
     margin-top: 75px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: black;
+    background: radial-gradient(circle, rgba(92, 3, 187, 0.685) 0%, rgba(129, 53, 206, 0.557) 25%, rgba(168, 103, 225, 0.763) 68%, rgba(168,18,231,0) 100%);
     font-size: 80px;
 }
 
 #new1footer{
+    clip-path: polygon(0 0, 97% 0, 100% 12%, 100% 100%, 4% 100%, 0 85%);
     padding-left: 50px;
     margin-left: 25px;
-    height: 22vh;
-    width: 65vw;
+    height: 250px;
+    width: 66vw;
+
 }
 
 #new1footer .newFooterText{
@@ -236,6 +250,14 @@ header {
 #new1footer .GameDateContainer{
 
     margin-left: 570px;
+}
+
+#FirstNewCard{
+    padding-bottom: 50px;
+}
+
+.GameDateContainer:hover{
+    color: #211f1f;
 }
 
 /* Модальное окно */
@@ -369,4 +391,17 @@ form button:hover {
     left: 0;
     z-index: 100;
 
+}
+
+.matchCard{
+    background-color: #fff;
+    border-radius: 20px 0px 20px 0px;
+    font-weight: 600;
+    font-size: 6vw;
+    width: 38vw;
+    height: 25vh;
+    border: #44145a;
+    display: flex;
+    padding: 45px;
+    justify-content: right;
 }

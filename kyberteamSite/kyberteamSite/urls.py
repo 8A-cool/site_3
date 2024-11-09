@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from mainApp.views import show_news_page
+from mainApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', show_news_page)
+    path('', views.show_news_page, name="NewsPage"),
+    path('match_centre/', views.show_match_page, name="MatchCentrePage"),
+    path('results/', views.show_results_page, name="ResultsPAge")
+
 ]
