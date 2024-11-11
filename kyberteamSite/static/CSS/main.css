@@ -14,8 +14,10 @@ a{
 }
 
 main{
-    padding:  0;
+    padding:  0px;
 }
+
+
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -393,15 +395,30 @@ form button:hover {
 
 }
 
+.MatchCards{
+    padding: 10vw;
+    padding-top: 7vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .matchCard{
+    margin: 17px;
     background-color: #fff;
     border-radius: 20px 0px 20px 0px;
     font-weight: 600;
     font-size: 6vw;
-    width: 38vw;
-    height: 25vh;
-    border: #44145a;
-    display: flex;
+    border: #6c208f solid 5px;
     padding: 45px;
-    justify-content: right;
+    width: 600px;
+    height: 300px;
+    text-align: right;
+    flex-grow: 1;
+    flex-basis: 300;
+
 }
+
+#CS2card{
+    background-image: url("https://upload.wikimedia.org/wikipedia/ru/a/a9/CS-S_Box.jpg");
+}
+
