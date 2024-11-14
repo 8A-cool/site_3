@@ -9,6 +9,7 @@ a{
     text-decoration: none ;
 }
 
+
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -187,20 +188,21 @@ header {
     z-index: 5;
 }
 
-.newFooterText{
+.newFooterText a{
     font-weight: bold;
     font-size: 135%;
     color: black;
+    transition: color 0.3s ease-in-out 0.1s;
 }
 
-.newFooterText:hover{
-    color: gray;
+.newFooterText a:hover{
+    color: rgb(75, 72, 76);
 }
 
 .GameDateContainer{
     width: max-content;
     display: inline-block;
-    margin-top: 85px;
+    margin-top: 75px;
     margin-left: 170px;
     color: #211f1f;
 }
@@ -226,15 +228,7 @@ header {
     width: 65vw;
 }
 
-#new1Head .newHeaderText{
-    display: inline-block;
-    margin-left: 35px;
-    margin-top: 75px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: radial-gradient(circle, rgba(92, 3, 187, 0.685) 0%, rgba(129, 53, 206, 0.557) 25%, rgba(168, 103, 225, 0.763) 68%, rgba(168,18,231,0) 100%);
-    font-size: 80px;
-}
+
 
 #new1footer{
     clip-path: polygon(0 0, 97% 0, 100% 12%, 100% 100%, 4% 100%, 0 85%);
@@ -372,7 +366,7 @@ form button:hover {
     z-index: 100;
 }
 
-#menuModalContent ul li a {
+#menuModalContent ul li {
     text-decoration: none;
     color: #333;
     z-index: 100;
