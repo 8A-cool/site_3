@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const menuIcon = document.getElementById('menuIcon');
+    const menuIcon = document.getElementById('divSetting');
     const menuModal = document.getElementById('menuModal');
     const closeMenu = document.querySelector('#menuModal .close');
 

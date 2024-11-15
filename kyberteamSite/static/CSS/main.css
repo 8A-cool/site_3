@@ -192,11 +192,11 @@ header {
     font-weight: bold;
     font-size: 135%;
     color: black;
-    transition: color 0.3s ease-in-out 0.1s;
+    transition: color 0.1s ease-in-out 0.1s;
 }
 
 .newFooterText a:hover{
-    color: rgb(75, 72, 76);
+    color: rgb(157, 105, 174);
 }
 
 .GameDateContainer{
@@ -394,6 +394,11 @@ form button:hover {
     padding-top: 7vh;
     display: flex;
     flex-wrap: wrap;
+}
+
+.formReg {
+    padding-top: 4vw;
+    justify-self: center;
 }
 
 .matchCard{

@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../static/images/site_3-design/logo.png" />
+        <link rel="shortcut icon" href="../static/images/FrenzyLogo.png" />
         <link rel="stylesheet" href="{% static '../static/CSS/main.css' %}">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
         
@@ -29,7 +29,6 @@
                 <img src="{% static '../static/images/user-icon.jpg' %}" alt="Вход/Регистрация" id="userIcon">
             </a>
         </header>
-
         <main>
             <div class="InnerContainer">
                 {% block page_name %}
@@ -173,9 +172,9 @@
                 <h2 id = "menuFirstText">Меню</h2>
                 <ul>
                     <div id="menuText">
-                        <li><a href="#" >О нас</a></li>
-                        <li><a href="#" >Контакты</a></li>
-                        <li><a href="#" >FAQ</a></li>
+                        <li><a href="http://127.0.0.1:8000/about" >О нас</a></li>
+                        <li><a href="http://127.0.0.1:8000/contacts" >Контакты</a></li>
+                        <li><a href="http://127.0.0.1:8000/form" >Подать заявку</a></li>
                     </div>
                 </ul>
             </div>

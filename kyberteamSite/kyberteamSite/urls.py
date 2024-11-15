@@ -22,6 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.show_news_page, name="NewsPage"),
     path('match_centre/', views.show_match_page, name="MatchCentrePage"),
-    path('results/', views.show_results_page, name="ResultsPAge")
+    path('results/', views.show_results_page, name="ResultsPAge"),
+    path('form/', views.show_form_page, name="FormPage"),
+    path('about/', views.show_about_page)
 
 ]

@@ -9,3 +9,9 @@ def show_match_page(request):
 
 def show_results_page(request):
     return render(request, './results.html')
+
+def show_form_page(request):
+    return render(request, './form.html')
+
+def show_about_page(request):
+    return render(request, './about.html')
