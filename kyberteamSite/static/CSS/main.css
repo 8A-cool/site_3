@@ -9,6 +9,15 @@ a{
     text-decoration: none ;
 }
 
+.TextInfo{
+    border-radius: 10px;
+    margin-top: 3vh;
+    padding: 10px;
+    background-color:rgba(72, 34, 112, 0.851);
+    color: white;
+    width: 55vw;
+    justify-self: center;
+}
 
 ::-webkit-scrollbar {
     width: 0;
@@ -18,7 +27,9 @@ main{
     padding:  0px;
 }
 
-
+#authModal{
+    padding-top: 25vh;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;

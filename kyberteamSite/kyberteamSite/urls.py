@@ -24,6 +24,7 @@ urlpatterns = [
     path('match_centre/', views.show_match_page, name="MatchCentrePage"),
     path('results/', views.show_results_page, name="ResultsPAge"),
     path('form/', views.show_form_page, name="FormPage"),
-    path('about/', views.show_about_page)
+    path('about/', views.show_about_page),
+    path('contacts/', views.show_contacts_page)
 
 ]

@@ -15,3 +15,6 @@ def show_form_page(request):
 
 def show_about_page(request):
     return render(request, './about.html')
+
+def show_contacts_page(request):
+    return render(request, './contacts.html')
