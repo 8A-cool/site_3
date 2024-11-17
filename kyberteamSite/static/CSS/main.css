@@ -9,6 +9,8 @@ a{
     text-decoration: none ;
 }
 
+
+
 .TextInfo{
     border-radius: 10px;
     margin-top: 3vh;
@@ -166,20 +168,18 @@ header {
 
 
 .newheader{
-    background-color: rgb(47, 255, 106);
-    backdrop-filter: blur(50px);
     color: black;
-    transition: color 1ms ease-in-out;
     padding-top: 75px;
     padding-left: 20px;
     height: 200px;
     width: 370px;
     font-weight: 600;
     font-size: 40px;
-    clip-path: polygon(96% 0, 100% 7%, 100% 100%, 0 100%, 0 0);
     z-index: 10;
     position: relative;
     margin-top: 200px;
+    display: inline-block;
+    clip-path: polygon(96% 0, 100% 7%, 100% 100%, 0 100%, 0 0);
 }
 
 .newheader :hover{
@@ -233,12 +233,21 @@ header {
 }
 
 #new1Head{
-    background-image: url("https://rg.ru/uploads/images/2023/02/15/18p_new_verh_kibersport_563_ca3.jpg");
-    background-size: cover;
-    backdrop-filter: blur(15px);
-    height: 45vh;
+    padding: 0;
+    height: 59vh;
     width: 65vw;
+    object-fit: cover;
+    clip-path: polygon(0 0, 96% 0, 100% 5%, 100% 100%, 3% 100%, 0 95%);
 }
+
+#new1Head :hover{
+    padding: 0;
+    height: 65vh;
+    width: 70vw;
+    object-fit: cover;
+    clip-path: polygon(0 0, 96% 0, 100% 5%, 100% 100%, 3% 100%, 0 95%);
+}
+
 
 
 
@@ -414,11 +423,11 @@ form button:hover {
 }
 
 .matchCard{
-    margin: 17px;
+    margin: 27px;
     background-color: #fff;
     border-radius: 20px 0px 20px 0px;
     font-weight: 600;
-    font-size: 6vw;
+    font-size: 4vw;
     border: #6c208f solid 5px;
     padding: 45px;
     width: 600px;
@@ -430,6 +439,36 @@ form button:hover {
 }
 
 #CS2card{
-    background-image: url("https://upload.wikimedia.org/wikipedia/ru/a/a9/CS-S_Box.jpg");
+    background-image: url("../images/match_centre/Cs Go Hack aimbot aimlock wall tudo-Photoroom.png");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
+#Dota2Card {
+    background-image: url("../images/match_centre/dota-bacground.png") ;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#StandoffCard {
+    background-image: url("../images/match_centre/standic-Photoroom.png") ;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#BrawlCard {
+    background-image: url("../images/match_centre/Leon-Photoroom.png") ;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all;
+}
+
+.matchCard :hover{
+    transition: 0.4s all;
+    filter: none;
+    color: #6c208f;
+}

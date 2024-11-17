@@ -39,95 +39,37 @@
             {% block page_content %}
                 <div class="newsApplications">  
                     <div class="NewApplicCard" id="FirstNewCard">
-                        <div class="newheader" id = "new1Head">
-                        </div>
+                        <img src="{{ firstNewCard.imageURL }}" class="newheader" id = "new1Head">
                         <div class="newFooter" id="new1footer">
                             <div class="newFooterText">
-                                <a href="">Подготовка к турниру</a>
+                                <a href="">{{ firstNewCard.tittle }}</a>
                             </div>
                             <div class="CardGameName">
-                                DOTA 2
+                                {{ firstNewCard.GameName }}
                             </div>
                             <div class="GameDateContainer">
-                                <span>22.11.2024</span>
+                                <span>{{ firstNewCard.NewDate }}</span>
                             </div>
                         </div>
                     </div>
-                    <div class="NewApplicCard" id="new2">
-                        <div class="newheader">
-                        </div>
-                        <div class="newFooter">
-                            <div class="newFooterText">
-                                <a href="">Подготовка к турниру</a>
-                            </div>
-                            <div class="CardGameName">
-                                DOTA 2
-                            </div>
-                            <div class="GameDateContainer">
-                                <span>22.11.2024</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="NewApplicCard" id="new3">
-                        <div class="newheader">
-                        </div>
-                        <div class="newFooter">
-                            <div class="newFooterText">
-                                <a href="#">Подготовка к турниру</a>
-                            </div>
-                            <div class="CardGameName">
-                                DOTA 2
-                            </div>
-                            <div class="GameDateContainer">
-                                <span>22.11.2024</span>
+                    {% for new in news_cards %}
+                        <div class="NewApplicCard" id="new2">
+                            <img src="{{ new.imageURL }}" class="newheader">
+                            </img>
+                            <div class="newFooter">
+                                <div class="newFooterText">
+                                    <a href="">{{ new.tittle }}</a>
+                                </div>
+                                <div class="CardGameName">
+                                    {{ new.gameName }}
+                                </div>
+                                <div class="GameDateContainer">
+                                    <span>{{ new.date }}</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="NewApplicCard" id="new4">
-                        <div class="newheader">
-                        </div>
-                        <div class="newFooter">
-                            <div class="newFooterText">
-                                <a href="#">Подготовка к турниру</a>
-                            </div>  
-                            <div class="CardGameName">
-                                DOTA 2
-                            </div>
-                            <div class="GameDateContainer">
-                                <span>22.11.2024</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="NewApplicCard" id="new5">
-                        <div class="newheader">
-                        </div>
-                        <div class="newFooter">
-                            <div class="newFooterText">
-                                <a href="#">Подготовка к турниру</a>
-                            </div>
-                            <div class="CardGameName">
-                                DOTA 2
-                            </div>
-                            <div class="GameDateContainer">
-                                <span>22.11.2024</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="NewApplicCard" id="new6">
-                        <div class="newheader">
-                        </div>
-                        <div class="newFooter">
-                            <div class="newFooterText">
-                                <a href="#">Подготовка к турниру</a>
-                            </div>
-                            <div class="CardGameName">
-                                DOTA 2
-                            </div>
-                            <div class="GameDateContainer">
-                                <span>22.11.2024</span>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
+
                 </div>
             {% endblock page_content %}
             </div>
